@@ -1,8 +1,8 @@
 <?php
 $server = "localhost";
-$user = "yastvanu_ushop";
-$password = "Xcalibar12$";
-$database = "yastvanu_sh";
+$user = "db_user";
+$password = "db_password";
+$database = "ushop_database";
 
 $con = mysqli_connect($server, $user, $password, $database);
 

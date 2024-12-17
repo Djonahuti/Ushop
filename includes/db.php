@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","yastvanu_ushop","Xcalibar12$","yastvanu_sh");
+$con = mysqli_connect("localhost","db_user","db_password","ushop_database");
 
 ?>
 

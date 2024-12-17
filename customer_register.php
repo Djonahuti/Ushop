@@ -24,7 +24,7 @@ function sendConfirmationEmail($email, $name, $confirmationLink) {
     $mail->Host = 'mail.ushop.com.ng'; // Replace with your SMTP host
     $mail->SMTPAuth = true;
     $mail->Username = 'noreply@ushop.com.ng'; // Replace with your email
-    $mail->Password = 'Xcalibar12$'; // Replace with your email password
+    $mail->Password = 'db_password'; // Replace with your email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 

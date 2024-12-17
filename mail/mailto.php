@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Host = 'mail.ushop.com.ng';
             $mail->SMTPAuth = true;
             $mail->Username = 'noreply@ushop.com.ng';
-            $mail->Password = 'Xcalibar12$';
+            $mail->Password = 'db_password';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 

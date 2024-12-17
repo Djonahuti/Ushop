@@ -1,6 +1,6 @@
 <?php
 
-$db = mysqli_connect("localhost","yastvanu_ushop","Xcalibar12$","yastvanu_sh");
+$db = mysqli_connect("localhost","db_user","db_password","ushop_database");
 
 /// IP address code starts /////
 function getRealUserIp(){
