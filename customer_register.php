@@ -232,7 +232,7 @@ function sendConfirmationEmail($email, $name, $confirmationLink) {
                             <!-- reCAPTCHA -->
                             <div class="form-group text-center">
                                 <label>Captcha Verification</label>
-                                <div class="g-recaptcha" data-sitekey="6Les-lcqAAAAAKb-jjoyW2E-jeYYeFZZLHfnaco6"></div>
+                                <div class="g-recaptcha" data-sitekey="your_data-sitekey"></div>
                             </div>
 
                             <!-- Submit Button -->
@@ -258,7 +258,7 @@ function sendConfirmationEmail($email, $name, $confirmationLink) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $recaptcha_response = $_POST['g-recaptcha-response'];
-    $secret_key = '6Les-lcqAAAAAK_gQ79whMDrCKNiH7cdhvVZhO-K';
+    $secret_key = 'your_secret_key';
 
     $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret_key&response=$recaptcha_response");
     $response_data = json_decode($verify);
