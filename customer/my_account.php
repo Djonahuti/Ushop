@@ -17,14 +17,14 @@ function sendConfirmationEmail($email, $name, $confirmationLink) {
     $mail = new PHPMailer;
 
     $mail->isSMTP();
-    $mail->Host = 'mail.ushop.com.ng'; // Replace with your SMTP host
+    $mail->Host = 'mail.website.com'; // Replace with your SMTP host
     $mail->SMTPAuth = true;
-    $mail->Username = 'noreply@ushop.com.ng'; // Replace with your email
+    $mail->Username = 'noreply@website.com'; // Replace with your email
     $mail->Password = 'db_password'; // Replace with your email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
-    $mail->setFrom('noreply@ushop.com.ng', 'U-Shop'); // Replace with your email
+    $mail->setFrom('noreply@website.com', 'U-Shop'); // Replace with your email
     $mail->addAddress($email, $name);
 
     $mail->isHTML(true);
@@ -106,14 +106,14 @@ function sendConfirmationEmail($email, $name, $confirmationLink) {
             </div>
             <div class='content'>
                 <h2>Explore U Shop</h2>
-                <a href='https://ushop.com.ng' target='_blank'>
-                    <img src='https://ushop.com.ng/img/ushop.PNG' alt='Homepage Preview' style='width:100%; border-radius: 8px;'>
+                <a href='https://website.com' target='_blank'>
+                    <img src='https://website.com/img/ushop.PNG' alt='Homepage Preview' style='width:100%; border-radius: 8px;'>
                 </a>
                 <p style='text-align: center; margin-top: 10px;'>Discover the latest deals and products!</p>
             </div>
             <div class='footer'>
                 <p>&copy; 2024 U Shop. All rights reserved.</p>
-                <p><a href='https://ushop.com.ng'>Visit Our Homepage</a></p>
+                <p><a href='https://website.com'>Visit Our Homepage</a></p>
             </div>
         </div>
     </body>
@@ -168,7 +168,7 @@ function sendConfirmationEmail($email, $name, $confirmationLink) {
             }
 
             if (isset($_GET['send_email'])) {
-                $confirmation_link = "https://ushop.com.ng/verify.php?email=$c_email&code=$customer_confirm_code";
+                $confirmation_link = "https://website.com/verify.php?email=$c_email&code=$customer_confirm_code";
 
                 if (sendConfirmationEmail($c_email, $c_name, $confirmation_link)) {
                     echo "<script>alert('Your confirmation email has been sent. Check your inbox.');</script>";

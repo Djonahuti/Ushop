@@ -36,15 +36,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             // SMTP settings
             $mail->isSMTP();
-            $mail->Host = 'mail.ushop.com.ng';
+            $mail->Host = 'mail.website.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'noreply@ushop.com.ng';
+            $mail->Username = 'noreply@website.com';
             $mail->Password = 'db_password';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
             // Send auto-reply to the user
-            $mail->setFrom('noreply@ushop.com.ng', 'U Shop');
+            $mail->setFrom('noreply@website.com', 'U Shop');
             $mail->addAddress($email);
 
             $mail->isHTML(true);
@@ -128,8 +128,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class='content'>
                 <h2>Explore U Shop</h2>
-                <a href='https://ushop.com.ng' target='_blank'>
-                    <img src='https://ushop.com.ng/img/ushop.PNG' alt='Homepage Preview' style='width:100%; border-radius: 8px;'>
+                <a href='https://website.com' target='_blank'>
+                    <img src='https://website.com/img/ushop.PNG' alt='Homepage Preview' style='width:100%; border-radius: 8px;'>
                 </a>
                 <p style='text-align: center; margin-top: 10px;'>Discover the latest deals and products!</p>
             </div>
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class='footer'>
                 <p>&copy; 2024 U Shop. All rights reserved.</p>
-                <p><a href='https://ushop.com.ng'>Visit Our Homepage</a></p>
+                <p><a href='https://website.com'>Visit Our Homepage</a></p>
             </div>
         </div>
     </body>
@@ -148,7 +148,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Send a copy to the administrator
             $mail->clearAddresses();
-            $mail->addAddress('noreply@ushop.com.ng');
+            $mail->addAddress('noreply@website.com');
             $mail->isHTML(true);
             $mail->Subject = 'New Contact Form Submission';
             $mail->Body = "
@@ -227,7 +227,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                             <div class='footer'>
                                 <p>&copy; 2024 U Shop. All rights reserved.</p>
-                                <p><a href='https://ushop.com.ng'>Visit Our Homepage</a></p>
+                                <p><a href='https://website.com'>Visit Our Homepage</a></p>
                             </div>
                         </div>
                     </body>
