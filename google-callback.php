@@ -13,7 +13,7 @@ ob_start();
 $client = new Google_Client();
 $client->setClientId('ClientId');
 $client->setClientSecret('ClientSecret');
-$client->setRedirectUri('https://ushop.com.ng/google-callback.php');
+$client->setRedirectUri('https://website.com/google-callback.php');
 $client->addScope('email');
 $client->addScope('profile');
 

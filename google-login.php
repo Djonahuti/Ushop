@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 $client = new Google_Client();
 $client->setClientId('ClientID');
 $client->setClientSecret('ClientSecret');
-$client->setRedirectUri('https://ushop.com.ng/google-callback.php'); // Replace with the actual redirect URI
+$client->setRedirectUri('https://website.com/google-callback.php'); // Replace with the actual redirect URI
 $client->addScope('email');
 $client->addScope('profile');
 
