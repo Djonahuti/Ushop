@@ -1,0 +1,26 @@
+[22-Nov-2024 18:33:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 've finished your game. Magic? Maybe.','Fine, stretchy fabric
+Moves with you
+Pa' at line 1 in /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php:430
+Stack trace:
+#0 /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php(430): mysqli_query(Object(mysqli), 'insert into pro...')
+#1 /home/yastvanu/ushop.com.ng/i/admin_area/index.php(104): include('/home/yastvanu/...')
+#2 {main}
+  thrown in /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php on line 430
+[22-Nov-2024 18:36:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 've finished your game. Magic? Maybe.','Fine, stretchy fabric
+Moves with you
+Pa' at line 1 in /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php:430
+Stack trace:
+#0 /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php(430): mysqli_query(Object(mysqli), 'insert into pro...')
+#1 /home/yastvanu/ushop.com.ng/i/admin_area/index.php(104): include('/home/yastvanu/...')
+#2 {main}
+  thrown in /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php on line 430
+[22-Nov-2024 18:39:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 've finished your game. Magic? Maybe.','Fine, stretchy fabric
+Moves with you
+Pa' at line 1 in /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php:430
+Stack trace:
+#0 /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php(430): mysqli_query(Object(mysqli), 'insert into pro...')
+#1 /home/yastvanu/ushop.com.ng/i/admin_area/index.php(104): include('/home/yastvanu/...')
+#2 {main}
+  thrown in /home/yastvanu/ushop.com.ng/i/admin_area/insert_product.php on line 430
+[03-Dec-2024 07:32:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yastvanu/ushop.com.ng/admin_area/view_coupons.php on line 109
+[03-Dec-2024 09:20:28 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yastvanu/ushop.com.ng/admin_area/view_coupons.php on line 109
